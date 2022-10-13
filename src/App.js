@@ -1,30 +1,46 @@
-import './App.css';
-import { useState, useEffect } from 'react';
+import React from "react";
+import { useEffect } from "react";
 
-const Person = (props) => {
-  return (
-    <>
-      <h1>Name: {props.name}</h1>
-      <h2>Age: {props.age}</h2>
-      <h4>Work: {props.work}</h4>
-    </>
-  )
+const API_URL = "https://api.fontedavida.org/teaching/api";
+
+const searcTeachings = async (takeLimit) => {
+  const response = await fetch(`${API_URL}?limit=${takeLimit}`);
+  const data = await response.json();
+  console.log(data)
 }
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
   useEffect(() => {
-    setCounter(10);
+    // searcTeachings(20);
   }, []);
 
   return (
-    <div className="App">
-      <Person name="Alex" age="30" work="Project-Manager" />
-      <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
-      {counter}
-      <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
-    </div>
+    <>
+      <div className="App">
+        <h1>Pregações de recent</h1>
+        <MakeInput />
+      </div>
+      <p>Time: {new Date().toLocaleTimeString()}</p>
+      <Welcome name="Alexande" />
+    </>
   );
+}
+
+class Welcome extends React.Component {
+  render() {
+    return <h3>Usando classes. {this.props.name}</h3>
+  }
+}
+
+class MakeInput extends React.Component {
+  render() {
+    return (
+      <input
+        placeholder="coloque id da pregação"
+        defaultValue="94"
+        onChange={() => { }} />
+    )
+  }
 }
 
 export default App;
