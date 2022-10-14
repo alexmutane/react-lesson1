@@ -1,11 +1,10 @@
 import React from "react";
-import * as Mix from './components/Functional';
+import Usingclass from "./components/ClassComp";
 
 const App = () => {
   return (
     <div className="App">
-      <Mix.default />
-      <Mix.Named />
+      <Usingclass />
     </div>
   );
 }
