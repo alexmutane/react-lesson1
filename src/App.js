@@ -1,6 +1,6 @@
 import React from "react";
 
-import ClickEvent, { ClickFnClass } from './components/Events';
+import ClickEvent, { ClickFnClass, EventBinder } from './components/Events';
 
 const App = () => {
 
@@ -8,6 +8,7 @@ const App = () => {
     <div className="App">
       <ClickEvent />
       <ClickFnClass />
+      <EventBinder />
     </div>
   );
 }
