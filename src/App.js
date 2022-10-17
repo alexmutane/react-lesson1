@@ -1,14 +1,13 @@
 import React from "react";
 
-import Message from './components/States';
-import Counter from './components/Counter';
+import ClickEvent, { ClickFnClass } from './components/Events';
 
 const App = () => {
 
   return (
     <div className="App">
-      {/* <Message /> */}
-      <Counter />
+      <ClickEvent />
+      <ClickFnClass />
     </div>
   );
 }
