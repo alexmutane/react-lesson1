@@ -1,14 +1,12 @@
 import React from "react";
 
-import ClickEvent, { ClickFnClass, EventBinder } from './components/Events';
+import ParentComp from "./ParentComp";
 
 const App = () => {
 
   return (
     <div className="App">
-      <ClickEvent />
-      <ClickFnClass />
-      <EventBinder />
+      <ParentComp />
     </div>
   );
 }
