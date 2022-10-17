@@ -24,7 +24,7 @@ export class PropsClass extends React.Component {
         <p>{this.props.children}</p>
       </div>
     )
-    //it's the same to STATE
+    //it's the same to STATE, for destructing state, do:
     //const {state1, state2} = this.state
   }
 }
