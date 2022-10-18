@@ -1,12 +1,12 @@
 import React from "react";
 
-import ParentComp from "./ParentComp";
+import ConditionalRender from "./components/ConditionalRender";
 
 const App = () => {
 
   return (
     <div className="App">
-      <ParentComp />
+      <ConditionalRender />
     </div>
   );
 }
