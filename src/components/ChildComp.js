@@ -1,11 +1,10 @@
 import React from 'react';
 
 const ChildComp = (props) => {
-  const childName = "Filho";
+  const childName = "Comp-Filho"
   return (
     <div>
-      <button onClick={props.saudarHanlder}>Saudar parent.</button>
-      <button onClick={() => props.saudarHanlder(childName)}>Saudar parent c/ Param</button>
+      <button onClick={() => props.callParent(childName)}>Olá parent</button>
     </div>
   )
 }
