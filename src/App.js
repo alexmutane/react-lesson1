@@ -1,12 +1,13 @@
 import React from "react";
 
-import ConditionalRender from "./components/ConditionalRender";
+import NameList, { PeopleList } from "./components/NameList";
 
 const App = () => {
 
   return (
     <div className="App">
-      <ConditionalRender />
+      <NameList />
+      <PeopleList />
     </div>
   );
 }
