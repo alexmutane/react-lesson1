@@ -1,12 +1,14 @@
 import React from "react";
 
-import Form from './components/Form'
+import LifecycleMount from "./components/LifecycleMount";
+import LifecycleUpdate from "./components/LifecycleUpdate";
 
 const App = () => {
 
   return (
     <div className="App">
-      <Form />
+      {/* <LifecycleMount /> */}
+      <LifecycleUpdate />
     </div>
   );
 }
