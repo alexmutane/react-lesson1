@@ -1,13 +1,12 @@
 import React from "react";
 
-import NameList, { PeopleList } from "./components/NameList";
+import Form from './components/Form'
 
 const App = () => {
 
   return (
     <div className="App">
-      <NameList />
-      <PeopleList />
+      <Form />
     </div>
   );
 }
