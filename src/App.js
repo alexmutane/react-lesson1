@@ -1,14 +1,12 @@
 import React from "react";
-
-import LifecycleMount from "./components/LifecycleMount";
-import LifecycleUpdate from "./components/LifecycleUpdate";
+import FragmentDemo, { Frag } from "./components/FragmentDemo";
 
 const App = () => {
 
   return (
     <div className="App">
-      {/* <LifecycleMount /> */}
-      <LifecycleUpdate />
+      <FragmentDemo />
+      <Frag />
     </div>
   );
 }
