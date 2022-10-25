@@ -4,15 +4,15 @@ import ForwardRefInput from './ForwardRefInput'
 class ForwardRefParent extends Component {
   constructor(props) {
     super(props)
-    this.props = {
-      title: 'Param forwared'
-    }
+    // this.props = {
+    //   title: 'Param forwared'
+    // }
 
     this.inputRef = React.createRef();
   }
 
   clickHandler = () => {
-    this.inputRef.current.focus();
+    this.inputRef.current.focus()
   }
 
   render() {
