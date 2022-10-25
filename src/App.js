@@ -1,12 +1,12 @@
 import React from "react";
-import FragmentDemo, { Frag } from "./components/FragmentDemo";
+
+import ForwardRefParent from "./components/ForwardRefParent";
 
 const App = () => {
 
   return (
     <div className="App">
-      <FragmentDemo />
-      <Frag />
+      <ForwardRefParent />
     </div>
   );
 }
