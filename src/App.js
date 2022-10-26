@@ -1,16 +1,20 @@
 import React from "react";
-import FocusInput from "./components/FocusInput";
-import ForwardRefParent from "./components/ForwardRefParent";
 
-import RefsDemo from "./components/RefsDemo";
+import ErrorBound, { Boundary } from "./ErrorBound";
 
 const App = () => {
 
   return (
     <div className="App">
-      {/* <RefsDemo /> */}
-      {/* <FocusInput /> */}
-      <ForwardRefParent />
+      <Boundary>
+        <ErrorBound hero='manys' />
+      </Boundary>
+      <Boundary>
+        <ErrorBound hero="alex" />
+      </Boundary>
+      <Boundary>
+        <ErrorBound hero='nyld' />
+      </Boundary>
     </div>
   );
 }
