@@ -1,20 +1,17 @@
 import React from "react";
+import ClickCounter from "./ClickCounter";
+import ClickIncrementOr from "./components/ClickIncrement.or";
+import HoverCounter from "./components/HoverCounter";
 
-import ErrorBound, { Boundary } from "./ErrorBound";
+
 
 const App = () => {
 
   return (
     <div className="App">
-      <Boundary>
-        <ErrorBound hero='manys' />
-      </Boundary>
-      <Boundary>
-        <ErrorBound hero="alex" />
-      </Boundary>
-      <Boundary>
-        <ErrorBound hero='nyld' />
-      </Boundary>
+      <ClickCounter />
+      <HoverCounter />
+      <ClickIncrementOr />
     </div>
   );
 }
