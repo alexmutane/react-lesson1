@@ -1,20 +1,14 @@
 import React from "react";
-
-import ClickCounterRP from "./components/ClickCounterRP";
-import CounterRP from "./components/CounterRP";
-import HoverCounterRP from "./components/HoverCounterRP";
-// import UserRP from "./components/UserRP";
+import ContextCompA from "./components/ContextCompA";
+import UserContext from "./components/userContext";
 
 const App = () => {
 
   return (
     <div className="App">
-      <CounterRP render={(count, clickIncrementor) => (
-        <ClickCounterRP count={count} clickIncrementor={clickIncrementor} />
-      )} />
-      <CounterRP render={(count, clickIncrementor) => (
-        <HoverCounterRP count={count} clickIncrementor={clickIncrementor} />
-      )} />
+      <UserContext.Provider value="Alex's">
+        <ContextCompA />
+      </UserContext.Provider>
     </div>
   );
 }
