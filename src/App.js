@@ -1,14 +1,14 @@
 import React from "react";
-import ContextCompA from "./components/ContextCompA";
-import UserContext from "./components/userContext";
+import PostForm from "./components/http/PostForm";
+
+import PostList from "./components/http/PostList";
 
 const App = () => {
 
   return (
     <div className="App">
-      <UserContext.Provider value="Alex's">
-        <ContextCompA />
-      </UserContext.Provider>
+      {/* <PostList /> */}
+      <PostForm />
     </div>
   );
 }
