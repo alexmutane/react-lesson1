@@ -1,14 +1,12 @@
 import React from "react";
-import PostForm from "./components/http/PostForm";
 
-import PostList from "./components/http/PostList";
+import HookCounter from "./Hooks/HookCounter";
 
 const App = () => {
 
   return (
     <div className="App">
-      {/* <PostList /> */}
-      <PostForm />
+      <HookCounter />
     </div>
   );
 }
