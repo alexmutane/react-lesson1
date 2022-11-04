@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+//USE-STATE WITH PREVIOUS VALUE
 function HookCounterTwo() {
   const initialCount = 0;
   const [count, setCount] = useState(initialCount);
