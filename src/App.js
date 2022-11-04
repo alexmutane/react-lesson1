@@ -1,12 +1,12 @@
 import React from "react";
+import HookWithObject from "./Hooks/HookWithObject";
 
-import HookCounterTwo from "./Hooks/HookCounterTwo";
 
 const App = () => {
 
   return (
     <div className="App">
-      <HookCounterTwo />
+      <HookWithObject />
     </div>
   );
 }
