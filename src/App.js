@@ -1,12 +1,12 @@
 import React from "react";
 
-import HookCounter from "./Hooks/HookCounter";
+import HookCounterTwo from "./Hooks/HookCounterTwo";
 
 const App = () => {
 
   return (
     <div className="App">
-      <HookCounter />
+      <HookCounterTwo />
     </div>
   );
 }
