@@ -1,13 +1,13 @@
 import React from "react";
 
-import UseEffectCounter1 from "./Hooks/UseEffectCounter1";
+import UseEffectMouseMove from "./Hooks/UseEffectMouseMove";
 
 
 const App = () => {
 
   return (
     <div className="App">
-      <UseEffectCounter1 />
+      <UseEffectMouseMove />
     </div>
   );
 }
