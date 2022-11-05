@@ -6,10 +6,16 @@ const UseEffectMouseMove = () => {
 
   useEffect(() => {
     console.log('use-effect runing just once');
-    window.addEventListener('mousemove', logMousePosition)
+    window.addEventListener('mousemove', logMousePosition);
+
+    //return a function that will unmount the listener
+    return () => {
+      console.log('listender unmounted');
+      window.removeEventListener('mousemove', logMousePosition)
+    }
   }, []);
 
-  function logMousePosition(event) {
+  const logMousePosition = event => {
     console.log('mouse-movement still logging')
     setX(event.clientX)
     setY(event.clientY)

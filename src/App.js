@@ -1,13 +1,11 @@
 import React from "react";
-
-import UseEffectMouseMove from "./Hooks/UseEffectMouseMove";
-
+import MouseContainer from "./Hooks/MouseContainer";
 
 const App = () => {
 
   return (
     <div className="App">
-      <UseEffectMouseMove />
+      <MouseContainer />
     </div>
   );
 }
