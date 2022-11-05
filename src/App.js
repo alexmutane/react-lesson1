@@ -1,12 +1,13 @@
 import React from "react";
-import HookWithArray from "./Hooks/HookWithArray";
+
+import UseEffectCounter1 from "./Hooks/UseEffectCounter1";
 
 
 const App = () => {
 
   return (
     <div className="App">
-      <HookWithArray />
+      <UseEffectCounter1 />
     </div>
   );
 }
